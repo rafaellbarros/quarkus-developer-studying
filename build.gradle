@@ -14,11 +14,13 @@ dependencies {
     implementation 'io.quarkus:quarkus-smallrye-openapi'
     implementation 'io.quarkus:quarkus-config-yaml'
     implementation 'io.quarkus:quarkus-hibernate-orm-panache'
+    implementation 'com.oracle.database.jdbc:ojdbc10:19.3.0.0'
     implementation 'io.quarkus:quarkus-resteasy'
-    implementation 'io.quarkus:quarkus-jdbc-derby'
+    implementation 'io.quarkus:quarkus-resteasy-jsonb'
     implementation 'io.quarkus:quarkus-arc'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
+    implementation 'io.quarkus:quarkus-smallrye-health'
 }
 
 group 'br.com.rafaellbarros'

@@ -8,3 +8,16 @@ quarkus:
   log:
     console:
       color: true
+  datasource:
+    db-kind: other
+    jdbc:
+      driver: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@172.21.0.2:1521:xedb
+    username: sys as sysdba
+    password: root
+  hibernate-orm:
+    database:
+      generation: update
+      #generation: drop-and-create
+    dialect: org.hibernate.dialect.Oracle10gDialect
+
