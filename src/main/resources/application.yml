@@ -3,3 +3,8 @@ display:
   unit:
     name: "mph"
     factor: 2.23694
+
+quarkus:
+  log:
+    console:
+      color: true
